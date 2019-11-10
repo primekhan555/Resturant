@@ -1,10 +1,15 @@
 import React, { Component } from "react";
-import { View, Text, TouchableOpacity,AsyncStorage } from "react-native";
+import {
+    View,
+    Text,
+    TouchableOpacity,
+    AsyncStorage,
+} from "react-native";
 export default class Splash extends Component {
-    componentDidMount(){
+    componentDidMount() {
         AsyncStorage.getItem('name', (err, result) => {
             if (result !== null) {
-                this.props.navigation.navigate('GetMenu');
+                this.props.navigation.navigate('QRCodeScanner');
                 this.setState({
                     cnic: result,
                 })

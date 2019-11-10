@@ -6,27 +6,34 @@
  * @flow
  */
 
-import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 import GetMenu from './Screens/GetMenu';
-import TestScreen from './Screens/TestScreen';
+import TestScreen2 from './Screens/TestScreen2';
 import Splash from './Screens/Splash';
 import Register from './Screens/Register';
+import QRCodeScanner from './Screens/QRCodeScanner';
+import OrderListScreen from './Screens/OrderListScreen';
 
 const App = createStackNavigator({
-  Splash:{
-    screen:Splash,
+  Splash: {
+    screen: Splash,
   },
-  Register:{
-    screen:Register,
+  Register: {
+    screen: Register,
   },
-
-GetMenu:{
-  screen:GetMenu,
-},
-TestScreen:{
-  screen:TestScreen,
-},
+  QRCodeScanner: {
+    screen: QRCodeScanner,
+  },
+  GetMenu: {
+    screen: GetMenu,
+  },
+  TestScreen2: {
+    screen: TestScreen2,
+  },
+  OrderListScreen: {
+    screen:OrderListScreen,
+  }
 })
 
 
