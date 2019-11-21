@@ -57,7 +57,7 @@ export default class OptionScreen extends Component {
                 <View style={styles.opacityView}>
                     <TouchableOpacity
                         onPress={() => {
-                            fetch('https://953969f4.ngrok.io/ihsan/Final%20Project/htdocs/clientPost.php', {
+                            fetch('https://1c1252df.ngrok.io/final_Project/htdocs/clientPost.php', {
                                 method: 'POST',
                                 headers: {
                                     Accept: 'application/json',

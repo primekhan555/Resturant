@@ -34,6 +34,7 @@ export default class QRCodeScanner extends Component {
             openScanner: false,
         })
         var plainText = qrvalues;
+        console.log(plainText)
         var halfText = plainText.split('#');
         let hotel_id=halfText[1];
         if (halfText[3] == "GetMenu") {

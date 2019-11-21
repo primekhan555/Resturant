@@ -120,19 +120,22 @@ export default class OrderListScreen extends Component {
                             var hours = d.getHours().toString().concat(' : ');
                             var minutes = d.getMinutes().toString();
                             var hm = hours.concat(minutes);
+                            var random1 = Math.floor((Math.random()*1000000)+10000000);
+                            var random2 = Math.floor((Math.random()*1000000)+10000000);
+                            var random3=random1+random2;
                             for (let i = 0; i < this.state.arr.length; i++) {
                                 var c_id = this.state.arr[i].c_id;
                                 var count = this.state.arr[i].count;
                                 var hotel_id = this.state.arr[i].hotel_id;
                                 var item_id = this.state.arr[i].item_id;
-                                fetch('https://ebac30bb.ngrok.io/ihsan/Final%20Project/htdocs/orderPost.php', {
+                                fetch('https://1c1252df.ngrok.io/final_Project/htdocs/orderPost.php', {
                                     method: 'POST',
                                     headers: {
                                         Accept: 'application/json',
                                         'Content-Type': 'application/json',
                                     },
                                     body: JSON.stringify({
-                                        o_id: 13,
+                                        o_id: random3,
                                         c_id: c_id,
                                         hotel_id: hotel_id,
                                         item_id: item_id,

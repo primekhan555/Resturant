@@ -154,7 +154,7 @@ export default class GetMenu extends Component {
                 })
             })
             .then(() => {
-                fetch('https://ebac30bb.ngrok.io/ihsan/Final%20Project/htdocs/clientGet.php')
+                fetch('https://1c1252df.ngrok.io/final_Project/htdocs/clientGet.php')
                     .then((response) => response.json())
                     .then((responseJson) => {
                         for (var i = 0; i < responseJson.length; i++) {
@@ -174,7 +174,7 @@ export default class GetMenu extends Component {
             }
         })
             .then(() => {
-                fetch('https://ebac30bb.ngrok.io//ihsan/Final%20Project/htdocs/index.php')
+                fetch('https://1c1252df.ngrok.io//final_Project/htdocs/index.php')
                     .then((response) => response.json())
                     .then((responseJson) => {
 
